@@ -1,5 +1,6 @@
 'use strict';
 
+
 /* ------------------------------------------------------------------------------------------------
 CHALLENGE 1 - Review
 
@@ -137,9 +138,10 @@ const listFoods = (recipe) => {
   let ingredient = recipe.ingredients;
   ingredient.forEach((item )=> {
     let newItem1 = item.slice(item.indexOf(' ') + 1, item.length);
-
+    let newItem2=newItem1.slice(newItem1.indexOf(' ') + 1, newItem1.length);
+    result.push(newItem2);
   });
-  return result.push( newItem1.slice(newItem1.indexOf(' ') + 1, newItem1.length));
+  return result ;
 };
 
 /* ------------------------------------------------------------------------------------------------
