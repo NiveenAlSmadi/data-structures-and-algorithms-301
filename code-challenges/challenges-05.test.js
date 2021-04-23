@@ -136,10 +136,11 @@ const listFoods = (recipe) => {
   let result = [];
   // Solution code here...
   let ingredient = recipe.ingredients;
-  ingredient.forEach((item )=> {
-    let newItem1 = item.slice(item.indexOf(' ') + 1, item.length);
-    let newItem2=newItem1.slice(newItem1.indexOf(' ') + 1, newItem1.length);
-    result.push(newItem2);
+  ingredient.forEach((element )=> {
+    let item1 = element.slice(element.indexOf(' ') + 1);
+
+    let item2 = item1.slice(item1.indexOf(' ') + 1);
+    result.push(item2);
   });
   return result ;
 };
