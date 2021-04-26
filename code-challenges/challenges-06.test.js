@@ -164,12 +164,12 @@ hasChildrenValues(characters, 'Sansa') will return false
 
 const hasChildrenValues = (arr, character) => {
   // Solution code here...
-  let boolean =0 ;
+  let cheak =0 ;
   arr.forEach(iteam =>{
     if(iteam.name === character){
-      boolean =Object.values(iteam).length;}
+      cheak =Object.values(iteam).length;}
   });
-  return boolean;
+  return cheak;
 
 };
 
